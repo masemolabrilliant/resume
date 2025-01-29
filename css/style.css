@@ -79,3 +79,22 @@ section{
 .home-details h1{
 font-size: clamp(3.5rem, 10vw, 5.5rem);
 }
+.home-details h2{
+    display: inline-block;
+    font-size: 3.2rem;
+    margin-top: -1rem;
+}
+.home-details p{
+    font-size: 1.6rem;
+    margin: 1rem 0 2.5rem;
+}
+
+.home-details .btn-sci{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: ;
+}
