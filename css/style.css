@@ -13,7 +13,7 @@
 :root{
     --bg-color:#1f242d;
     --second-bg-color: #323946;
-    --main--color: #7cf03d;
+    --main-color: #7cf03d;
     --white-color: #fff;
     --disabled-color:#fff3;
 }
@@ -54,7 +54,7 @@ nav a{
 }
 
 nav a:hover, nav a.active{
-    color: var(--main--color);
+    color: var(--main-color);
 }
 
 #menu-icon{
@@ -97,10 +97,10 @@ font-size: clamp(3.5rem, 10vw, 5.5rem);
 .btn{
     display: inline-block;
     padding: 1rem 3rem;
-    background: var(--main--color);
-    border: .2rem solid var(--main--color);
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
     border-radius: 4rem;
-    box-shadow:0 0 1rem var(--main--color);
+    box-shadow:0 0 1rem var(--main-color);
     font-size: 1.6rem;
     color: var(--bg-color);
     font-weight: 500;
@@ -108,6 +108,29 @@ font-size: clamp(3.5rem, 10vw, 5.5rem);
 }
 .btn:hover{
     background: transparent;
-    color: var(--main--color);
+    color: var(--main-color);
     box-shadow: none;
 }
+.home-details .btn-sci .sci{
+    margin-left: 2rem;
+}
+
+.home-details .btn-sci .sci a{
+    display: inline-flex;
+    padding: .8rem;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size:2rem;
+    color: var(--main-color);
+    margin: 0 .8rem;
+    transition: .5s;
+}
+
+.home-details .btn-sci .sci a:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1rem  var(--main-color);
+
+
+}
+
