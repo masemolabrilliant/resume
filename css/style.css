@@ -94,11 +94,12 @@ font-size: clamp(3.5rem, 10vw, 5.5rem);
     color: transparent;
     -webkit-text-stroke: .07rem var(--main-color);
     animation: display-text 16s linear infinite;
-    animimation-delay: calc(-4s * var(--i))
+    animation-delay: calc(-4s * var(--i)) ;
+   
 }
 
 @keyframes display-text{
-    25%,100%{
+    25%, 100% {
         display: none;
     }
 }
@@ -111,6 +112,7 @@ font-size: clamp(3.5rem, 10vw, 5.5rem);
     color: var(--main-color);
     white-space: nowrap;
     overflow: hidden;
+    animation: fill-text 4s linear infinite;
 }
 
 @keyframes fill-text{
