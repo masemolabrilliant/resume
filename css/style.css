@@ -8,6 +8,7 @@
     border: none;
     outline: none;    
     font-family: "Poppins", serif;
+    
 }
 
 :root{
@@ -24,6 +25,8 @@ html{
 
 body{
     color: var(--white-color);
+    
+    
 }
 
 header{
@@ -84,6 +87,11 @@ font-size: clamp(3.5rem, 10vw, 5.5rem);
     font-size: 3.2rem;
     margin-top: -1rem;
 }
+
+.home-details h2{
+    position: r;
+}
+
 .home-details p{
     font-size: 1.6rem;
     margin: 1rem 0 2.5rem;
@@ -137,6 +145,8 @@ font-size: clamp(3.5rem, 10vw, 5.5rem);
     width: 32vw;
     height: 32vw;
     border-radius: 50%;
+    padding: .5rem;
+    display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -144,12 +154,24 @@ font-size: clamp(3.5rem, 10vw, 5.5rem);
 
 .home-img .img-box::before,
 .home-img .img-box::after{
-    content: "";
+    content:'';
     position: absolute;
     width: 50rem;
     height: 50rem;
     background:conic-gradient(transparent,transparent, transparent, var(--main-color)) ;
     transform: rotate(0deg);
+    animation: rotate-border 10s linear infinite;
+}
+
+.home-img .img-box::after{
+    animation-delay: -5s ;
+}
+
+@keyframes rotate-border{
+    100%{
+        transform: rotate(360deg);
+    }
+
 }
 
 .home-img .img-box .img-item{
