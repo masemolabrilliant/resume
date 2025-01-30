@@ -19,3 +19,5 @@ resumeBtns.forEach((btn, idx)=> {
 
     
 });
+
+const arrowRight = document.querySelector('.portfolio-box .navigation .arrow-right')
