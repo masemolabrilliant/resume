@@ -12,7 +12,7 @@ resumeBtns.forEach((btn, idx)=> {
         resumeDetails.forEach(detail =>{
             detail.classList.remove("active");
         });
-        resumeDetails[idx].classList.add('active');
+        resumeDetails[idx].classList.add('active'); 
 
 
     });
