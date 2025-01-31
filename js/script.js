@@ -26,8 +26,14 @@ const arrowLeft = document.querySelector('.portfolio-box .navigation .arrow-left
 let index = 0;
 const activePortfolio = () => {
     const imgSlide = document.querySelector('.portfolio-carousel .img-slide ');
+    const portfolioDetails = document.querySelectorAll('.portfolio-detail');
 
     imgSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 2}rem ))`;
+
+    portfolioDetails.forEach(detail => {
+        detail.classList.remove('active');
+    });
+    portfolioDetails[index].classList.add('active');
 }
 
 arrowRight.addEventListener('click', ()=>{
