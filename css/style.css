@@ -607,6 +607,12 @@ color: var(--main-color);
     cursor: pointer;
 }
 
+.portfolio-box .navigation button.disabled{
+    border-color: var(--second-bg-color);
+    color: var(--disabled-color);
+}
+
+
 .portfolio-box .navigation .arrow-right{
     margin-left: 1.5rem;
 }
