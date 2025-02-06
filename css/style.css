@@ -146,16 +146,16 @@ section.active{
     gap: 5rem;
 }
 
-.home-details h1{
+.home-detail h1{
 font-size: clamp(3.5rem, 10vw, 5.5rem);
 }
-.home-details h2{
+.home-detail h2{
     display: inline-block;
     font-size: 3.2rem;
     margin-top: -1rem;
 }
 
-.home-details h2 span{
+.home-detail h2 span{
     position: relative;
     display:inline-block;
     color: transparent;
@@ -171,7 +171,7 @@ font-size: clamp(3.5rem, 10vw, 5.5rem);
     }
 }
 
-.home-details h2 span::before{
+.home-detail h2 span::before{
     content: attr(data-text);
     position: absolute;
     width: 0;
@@ -191,12 +191,12 @@ font-size: clamp(3.5rem, 10vw, 5.5rem);
 }
 }
 
-.home-details p{
+.home-detail p{
     font-size: 1.6rem;
     margin: 1rem 0 2.5rem;
 }
 
-.home-details .btn-sci{
+.home-detail .btn-sci{
     display: flex;
     align-items: center;
 }
@@ -218,11 +218,11 @@ font-size: clamp(3.5rem, 10vw, 5.5rem);
     color: var(--main-color);
     box-shadow: none;
 }
-.home-details .btn-sci .sci{
+.home-detail .btn-sci .sci{
     margin-left: 2rem;
 }
 
-.home-details .btn-sci .sci a{
+.home-detail .btn-sci .sci a{
     display: inline-flex;
     padding: .8rem;
     border: .2rem solid var(--main-color);
@@ -233,7 +233,7 @@ font-size: clamp(3.5rem, 10vw, 5.5rem);
     transition: .5s;
 }
 
-.home-details .btn-sci .sci a:hover{
+.home-detail .btn-sci .sci a:hover{
     background: var(--main-color);
     color: var(--bg-color);
     box-shadow: 0 0 1rem  var(--main-color);
@@ -795,7 +795,8 @@ font-size: 4.5rem;
         left: 0;
         width: 100%;
         padding: 1rem 0;
-        background: .1rem solid rgba(0, 0, 0, .2);
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         text-align: center;
         display: none;
@@ -857,7 +858,7 @@ font-size: 4.5rem;
     }
 }
 @media screen and (max-width:400px) {
-    .home-details,
+    .home-detail,
     .resume-box h2,
     .resume-box .heading,
     .resume-box .desc,
@@ -865,7 +866,22 @@ font-size: 4.5rem;
         text-align: center;
     }
 
-    .home-d
+    .home-detail .btn-sci{
+        flex-direction: column-reverse;
+    }
+
+    .home-detail .btn-sci .sci{
+      margin-left: 0;
+      margin-bottom: 2rem;
+    }
+
+    .contact-box form{
+        padding: 2.5rem 3rem 3.5rem;
+
+    }
+    .contact-box h2{
+       font-size: 3.5rem; 
+    }
 
 }
 
